@@ -11,4 +11,4 @@ with open(log_file) as fileorg:
                 print(line)
                 file.writelines(line)
 if os.stat(result_file).st_size:
-    exit(1)
+    exit(0)
