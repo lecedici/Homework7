@@ -10,5 +10,5 @@ with open(log_file) as fileorg:
             if err != -1:
                 print(line)
                 file.writelines(line)
-#if os.stat(result_file).st_size:
-#    exit(1)
+if os.stat(result_file).st_size:
+    exit(1)
